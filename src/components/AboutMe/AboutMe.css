@@ -1,0 +1,87 @@
+.aboutMe {
+    background-color: #202020;
+    display: block;
+    padding-bottom: 80px;
+}
+
+.aboutMe__title {
+    max-width: calc(100% - 140px);
+    margin: 0 auto;
+    padding: 111px 0 22px;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 27px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #FFFFFF;
+    border-bottom: 1px #DADADA solid;
+}
+
+.aboutMe__wrapper {
+    max-width: calc(100% - 140px);
+    display: flex;
+    margin: 66px auto 0;
+    justify-content: space-between;
+}
+
+.aboutMe__description {
+    width: 600px;
+    display: block;
+    padding: 0;
+    margin: 0;
+}
+
+.aboutMe__description-title {
+    margin: 0;
+    font-family: Inter;
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 58px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.aboutMe__description-subtitle {
+    margin: 19px 0 0;
+    font-family: Inter;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 0px;
+    text-align: left;
+
+    color: #FFFFFF;
+}
+
+.aboutMe__description-text {
+    margin: 26px auto 86px;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.04em;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.aboutMe__link {
+    margin: 0;
+    font-family: Inter;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 17px;
+    text-align: left;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.aboutMe__image {
+    width: 270px;
+    height: 327px;
+    border-radius: 10px;
+    background-image: url("../../images/sergey.jpg");
+    background-position: center;
+    background-size: cover;
+}

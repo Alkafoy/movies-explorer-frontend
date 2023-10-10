@@ -1,0 +1,23 @@
+.more {
+    background-color: #202020;
+    width: 100%;
+    display: flex;
+}
+
+.more__button {
+    width: calc(100% - 140px);
+    height: 36px;
+    margin: 67px auto 68px;
+    padding: 0;
+    background-color: #2F2F2F;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-family: Inter;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 15px;
+    text-align: center;
+    color: #FFFFFF;
+
+}

@@ -1,0 +1,22 @@
+.moviesCardList {
+    background-color: #202020;
+    padding: 124px 70px 0;
+}
+
+.moviesCardList__list {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(3, 360px);
+    /* grid-template-rows: repeat(2, 1fr); */
+    grid-gap: 32px 30px;
+}
+
+.moviesCardList__element {
+    width: 360px;
+    background-color: #222222;
+    border-radius: 6px;
+    position: relative;
+}

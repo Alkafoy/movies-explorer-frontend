@@ -1,0 +1,51 @@
+.footer {
+    background-color: #202020;
+    display: block;
+    padding: 90px 0 20px;
+    margin: 0;
+}
+
+.footer__title {
+    max-width: calc(100% - 140px);
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: center;
+    color: #8B8B8B;
+    margin: 0 auto 0;
+    padding: 0 0 20px;
+    border-bottom: 1px solid #424242;
+}
+
+.footer__wrapper {
+    max-width: calc(100% - 140px);
+    margin: 20px auto 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__year {
+    margin: 0;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    text-align: left;
+    color: #FFFFFF;
+}
+
+.footer__links {
+    width: 182px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__link {
+    text-decoration: none;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 16px;
+    color: #FFFFFF;
+}

@@ -1,0 +1,35 @@
+.filterCheckbox__custom {
+    margin-top: 26px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.filterCheckbox__custom input[type="checkbox"] {
+    display: none;
+}
+
+.filterCheckbox {
+    width: 36px;
+    height: 20px;
+    background-image: url('../../images/smalltumb.svg'); /* Изображение для неотмеченного состояния */
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-right: 10px;
+    transition: background-image 0.3s;
+}
+
+/* Стили для стилизованного чекбокса в отмеченном состоянии */
+.filterCheckbox__custom input[type="checkbox"]:checked + .filterCheckbox {
+    background-image: url('../../images/smalltumboff.svg'); /* Изображение для отмеченного состояния */
+}
+
+.filterCheckbox__label {
+    margin-left: 4px;
+    font-family: Inter;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 18px;
+    text-align: left;
+    color: #FFFFFF;
+}

@@ -6,7 +6,7 @@ export default function () {
         <section className='techs'>
             <h2 className='techs__title'>Технологии</h2>
             <div className='techs__description'>
-                <p className='techs__description-title'>7 технологий</p>
+                <p className='techs__description-title'>7&nbsp;технологий</p>
                 <p className='techs__description-text'>На курсе веб-разработки мы освоили технологии, которые применили в дипломном проекте.</p>
             </div>
             <ul className='techs__list'>

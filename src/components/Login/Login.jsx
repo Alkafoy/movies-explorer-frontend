@@ -1,6 +1,5 @@
 import React from "react";
 import '../Login/Login.css';
-import Header from "../Header/Header";
 import logo from "../../images/logo.png";
 import {Link} from "react-router-dom";
 
@@ -24,17 +23,15 @@ export default function Login() {
                             type='email'
                             className='login__input'
                             defaultValue='pochta@yandex.ru'
-                            readOnly
                         />
                     </div>
                     <div className='login__form-group'>
-                        <label htmlFor='email' className='login__label'>E-mail</label>
+                        <label htmlFor='email' className='login__label'>Пароль</label>
                         <input
-                            id='email'
-                            type='email'
+                            id='password'
+                            type='password'
                             className='login__input'
-                            defaultValue='pochta@yandex.ru'
-                            readOnly
+                            defaultValue=''
                         />
                     </div>
                 </form>

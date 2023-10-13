@@ -19,5 +19,18 @@
     line-height: 15px;
     text-align: center;
     color: #FFFFFF;
+}
 
+@media (max-width: 768px) {
+    .more__button {
+        width: calc(100% - 60px);
+        margin: 83px auto 132px;
+    }
+}
+
+@media (max-width: 320px) {
+    .more__button {
+        width: calc(100% - 20px);
+        margin: 85px auto 152px;
+    }
 }

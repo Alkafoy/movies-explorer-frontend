@@ -3,11 +3,43 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding: 15px 70px;
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header {
+        padding: 15px 14px;
+    }
+}
+
+.header_movies {
+    background-color: #202020;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 18px 70px;
 }
 
+@media (max-width: 768px) {
+    .header_movies {
+        padding: 15px 30px;
+    }
+}
+
+@media (max-width: 320px) {
+    .header_movies {
+        padding: 15px 14px;
+    }
+}
+
 .header__logo {
-    max-width: 308px;
+    width: 38px;
 }
 
 .header__right-wrapper {
@@ -29,6 +61,7 @@
     text-decoration: none;
     margin-right: 20px;
 }
+
 .header__link:last-child {
     margin-right: 0;
 }
@@ -37,6 +70,13 @@
     width: 100px;
     height: 30px;
     background-image: url("../../images/profile.svg");
+    margin-left: 50px;
+}
+
+.header__profile_movies {
+    width: 100px;
+    height: 30px;
+    background-image: url("../../images/profile-movies.svg");
     margin-left: 50px;
 }
 
@@ -50,6 +90,16 @@
     margin-right: 20px;
 }
 
+@media (max-width: 320px) {
+    .header__sign-link {
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: right;
+        margin: 0 4px 4px 0;
+    }
+}
+
 .header__button {
     width: 76px;
     height: 32px;
@@ -60,9 +110,45 @@
     border-radius: 3px;
     margin-left: 10px;
     font-family: Inter;
-    font-size: 12px;
+    font-size: 10px;
     font-weight: 500;
     line-height: 16px;
+    text-align: left;
+
     color: #000000;
     text-decoration: none;
+}
+
+@media (max-width: 768px) {
+    .header__button {
+        font-size: 12px;
+        font-weight: 500;
+        line-height: 16px;
+        text-align: left;
+    }
+}
+
+@media (max-width: 320px) {
+    .header__button {
+        width: 54px;
+        height: 26px;
+        margin-bottom: 5px;
+    }
+}
+
+.header__menu-button {
+    width: 44px;
+    height: 44px;
+    border: none;
+    background-color: transparent;
+    background-image: url('../../images/burger-icon.svg');
+    background-position: center;
+    cursor: pointer;
+    transition: opacity .3s linear;
+}
+
+@media (max-width: 320px) {
+    .header__menu-button {
+        background-size: 80%;
+    }
 }

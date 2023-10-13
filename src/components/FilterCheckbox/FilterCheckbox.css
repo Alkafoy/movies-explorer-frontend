@@ -1,8 +1,23 @@
 .filterCheckbox__custom {
     margin-top: 26px;
+    padding-bottom: 43px;
     display: flex;
     align-items: center;
     cursor: pointer;
+    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+}
+
+@media (max-width: 768px) {
+    .filterCheckbox__custom {
+        padding-bottom: 51px;
+    }
+}
+
+@media (max-width: 320px) {
+    .filterCheckbox__custom {
+        margin-top: 30px;
+        padding-bottom: 62px;
+    }
 }
 
 .filterCheckbox__custom input[type="checkbox"] {
@@ -32,4 +47,15 @@
     line-height: 18px;
     text-align: left;
     color: #FFFFFF;
+}
+
+@media (max-width: 320px) {
+    .filterCheckbox__label {
+        margin-left: 4px;
+        font-size: 11px;
+        font-weight: 400;
+        line-height: 18px;
+        text-align: left;
+        color: #FFFFFF;
+    }
 }

@@ -9,14 +9,16 @@ import Footer from "../Footer/Footer";
 
 export default function Main() {
     return (
-        <main>
+        <>
             <Header/>
-            <Promo/>
-            <AboutProject/>
-            <Techs/>
-            <AboutMe/>
-            <Portfolio/>
+            <main>
+                <Promo/>
+                <AboutProject/>
+                <Techs/>
+                <AboutMe/>
+                <Portfolio/>
+            </main>
             <Footer/>
-        </main>
+        </>
     );
 }

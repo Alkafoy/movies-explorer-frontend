@@ -11,12 +11,12 @@ export default function Movies() {
         <>
             <Header/>
 
-            <movies>
+            <main>
                 <SearchForm/>
                 <Preloader/>
                 <MoviesCardList/>
                 <More/>
-            </movies>
+            </main>
 
             <Footer/>
         </>

@@ -1,3 +1,5 @@
+.moviesCard {}
+
 .moviesCard__caption {
     display: flex;
     justify-content: space-between;
@@ -5,7 +7,7 @@
     padding: 18px;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
     .moviesCard__caption {
         padding: 14px 14px;
     }
@@ -40,7 +42,7 @@
     color: #8B8B8B;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
     .moviesCard__duration {
         font-size: 10px;
         font-weight: 400;
@@ -74,8 +76,22 @@
     text-align: center;
 }
 
-@media (max-width: 320px) {
+@media (max-width: 370px) {
     .moviesCard__button {
         margin: 11px auto;
     }
+}
+
+.moviesCard__button_saved {
+    width: 100px;
+    height: 29px;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    padding: 0;
+    margin: 15px auto;
+    background-image: url("../../images/icon__COLOR_invisible.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: #EE3465;
 }

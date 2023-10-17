@@ -6,10 +6,10 @@ import {Link} from "react-router-dom";
 export default function Login() {
     return (
         <section className='login'>
-            <div className='login__wrapper'>
+            <main className='login__wrapper'>
                 <Link to='/'>
                     <img
-                        className="header__logo"
+                        className="headerLogo"
                         src={logo}
                         alt="Логотип заголовка"
                     />
@@ -34,13 +34,16 @@ export default function Login() {
                             defaultValue=''
                         />
                     </div>
+
                 </form>
-                <button className='login__button'>Войти</button>
-                <div className='login__links'>
-                    <p className='login__text'>Ещё не зарегистрированы?</p>
-                    <Link to='/signup' className='login__register-link'>Регистрация</Link>
-                </div>
-            </div>
+                <nav className='login__buttons'>
+                    <button className='login__button'>Войти</button>
+                    <div className='login__links'>
+                        <p className='login__text'>Ещё не зарегистрированы?</p>
+                        <Link to='/signup' className='login__register-link'>Регистрация</Link>
+                    </div>
+                </nav>
+            </main>
         </section>
     );
 }

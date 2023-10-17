@@ -10,10 +10,10 @@ export default function SavedMovies() {
         <>
             <Header/>
 
-            <savedMovies>
+            <main>
                 <SearchForm/>
                 <MoviesCardList/>
-            </savedMovies>
+            </main>
 
             <Footer/>
         </>

@@ -4,7 +4,7 @@ import './SearchForm.css';
 
 export default function SearchForm() {
     return (
-        <section className='searchForm'>
+        <section className='searchForm' aria-label='Строка поиска'>
             <form className='searchForm__wrapper'>
                 <input
                     className='searchForm__input'

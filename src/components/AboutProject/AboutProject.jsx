@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 
 export default function () {
     return (
-        <section className='aboutProject'>
+        <section id={"aboutProject"} className='aboutProject'>
             <h2 className='aboutProject__title'>О проекте</h2>
             <ul className='aboutProject__list'>
                 <li className='aboutProject__element'>
@@ -17,10 +17,10 @@ export default function () {
                 </li>
             </ul>
             <div className='aboutProject__time-schedule'>
-                <div className='aboutProject__schedule-item aboutProject__custom-back1 aboutProject__custom-text1'>1 неделя</div>
-                <div className='aboutProject__schedule-item aboutProject__custom-back2 aboutProject__custom-text2'>4 недели</div>
-                <div className='aboutProject__schedule-item'>Back-end</div>
-                <div className='aboutProject__schedule-item'>Front-end</div>
+                <p className='aboutProject__schedule-item aboutProject__custom-back1 aboutProject__custom-text1'>1 неделя</p>
+                <p className='aboutProject__schedule-item aboutProject__custom-back2 aboutProject__custom-text2'>4 недели</p>
+                <p className='aboutProject__schedule-item'>Back-end</p>
+                <p className='aboutProject__schedule-item'>Front-end</p>
             </div>
         </section>
     )

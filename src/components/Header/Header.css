@@ -6,7 +6,7 @@
     padding: 15px 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .header {
         padding: 15px 30px;
     }
@@ -26,7 +26,7 @@
     padding: 18px 70px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .header_movies {
         padding: 15px 30px;
     }
@@ -38,7 +38,7 @@
     }
 }
 
-.header__logo {
+.headerLogo {
     width: 38px;
 }
 
@@ -50,6 +50,12 @@
 .header__link-wrapper {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 769px) {
+    .header__link-wrapper {
+        display: none;
+    }
 }
 
 .header__link {
@@ -73,11 +79,23 @@
     margin-left: 50px;
 }
 
+@media (max-width: 769px) {
+    .header__profile {
+        display: none;
+    }
+}
+
 .header__profile_movies {
     width: 100px;
     height: 30px;
     background-image: url("../../images/profile-movies.svg");
     margin-left: 50px;
+}
+
+@media (max-width: 769px) {
+    .header__profile_movies {
+        display: none;
+    }
 }
 
 .header__sign-link {
@@ -137,6 +155,7 @@
 }
 
 .header__menu-button {
+    display: none;
     width: 44px;
     height: 44px;
     border: none;
@@ -145,6 +164,12 @@
     background-position: center;
     cursor: pointer;
     transition: opacity .3s linear;
+}
+
+@media (max-width: 769px) {
+    .header__menu-button {
+        display: block;
+    }
 }
 
 @media (max-width: 320px) {

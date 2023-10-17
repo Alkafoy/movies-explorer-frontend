@@ -6,10 +6,10 @@ import {Link} from "react-router-dom";
 export default function Register() {
     return (
         <section className='register'>
-            <div className='register__wrapper'>
+            <main className='register__wrapper'>
                 <Link to='/'>
                     <img
-                        className="header__logo"
+                        className="headerLogo"
                         src={logo}
                         alt="Логотип заголовка"
                     />
@@ -45,12 +45,14 @@ export default function Register() {
                     </div>
                     <span className='register__span'>Что-то пошло не так...</span>
                 </form>
-                <button className='register__button'>Зарегистрироваться</button>
-                <div className='register__links'>
-                    <p className='register__text'>Уже зарегистрированы?</p>
-                    <Link to='/signin' className='register__login-link'>Войти</Link>
-                </div>
-            </div>
+                <nav className='register__buttons'>
+                    <button className='register__button'>Зарегистрироваться</button>
+                    <div className='register__links'>
+                        <p className='register__text'>Уже зарегистрированы?</p>
+                        <Link to='/signin' className='register__login-link'>Войти</Link>
+                    </div>
+                </nav>
+            </main>
         </section>
     );
 }

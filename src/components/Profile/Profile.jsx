@@ -9,7 +9,7 @@ export default function Profile() {
             <Header/>
             <section className='profile'>
                 <main>
-                    <h2 className='profile__title'>Привет, Виталий!</h2>
+                    <h1 className='profile__title'>Привет, Виталий!</h1>
                     <form className='profile__form'>
                         <div className='profile__form-group'>
                             <label htmlFor='name' className='profile__label'>Имя</label>

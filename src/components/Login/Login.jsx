@@ -14,7 +14,7 @@ export default function Login() {
                         alt="Логотип заголовка"
                     />
                 </Link>
-                <h2 className='login__title'>Рады видеть!</h2>
+                <h1 className='login__title'>Рады видеть!</h1>
                 <form className='login__form'>
                     <div className='login__form-group'>
                         <label htmlFor='email' className='login__label'>E-mail</label>

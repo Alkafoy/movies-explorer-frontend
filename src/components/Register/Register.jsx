@@ -14,7 +14,7 @@ export default function Register() {
                         alt="Логотип заголовка"
                     />
                 </Link>
-                <h2 className='register__title'>Добро пожаловать!</h2>
+                <h1 className='register__title'>Добро пожаловать!</h1>
                 <form className='register__form'>
                     <div className='register__form-group'>
                         <label htmlFor='email' className='register__label'>Имя</label>

@@ -37,7 +37,7 @@
     transition: max-width 0.5s;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     .promo__title {
         font-size: 40px;
         font-weight: 400;
@@ -70,7 +70,7 @@
     margin: 0;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 880px) {
     .promo__subtitle {
         width: 260px;
         margin: 21px auto 0;
@@ -109,7 +109,7 @@
 
 @media (max-width: 320px) {
     .promo__bottom {
-        margin: 80px 0 75px 0;
+        margin: 80px 0 30px 0;
     }
 }
 

@@ -18,6 +18,19 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    padding: 0 0 130px;
+}
+
+@media (max-width: 768px) {
+    .notFound__wrapper {
+        padding: 40vh 0 22vh;
+    }
+}
+
+@media (max-width: 320px) {
+    .notFound__wrapper {
+        padding: 22vh 0 22vh;
+    }
 }
 
 .notFound__title {
@@ -79,7 +92,8 @@
 
 @media (max-width: 768px) {
     .notFound__link {
-        bottom: 222px;
+        position: static;
+        margin: 184px auto 0;
     }
 }
 @media (max-width: 320px) {
@@ -88,6 +102,7 @@
         font-weight: 400;
         line-height: 15px;
         text-align: center;
+        position: fixed;
         bottom: 30px;
     }
 }

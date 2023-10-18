@@ -6,7 +6,7 @@ export default function FilterCheckbox() {
         <div className='filterCheckbox'>
             <label className="filterCheckbox__usually">
                 <input type="checkbox" id="short-film-checkbox"/>
-                <div className="filterCheckbox__custom"></div>
+                <span className="filterCheckbox__custom"></span>
                 <span className="filterCheckbox__label">Короткометражки</span>
             </label>
         </div>

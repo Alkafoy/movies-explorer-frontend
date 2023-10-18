@@ -1,5 +1,5 @@
 import './Header.css';
-import logo from '../../images/logo.png'
+import logo from '../../images/logo.svg'
 import Navigation from '../Navigation/Navigation.jsx';
 import React, {useState} from "react";
 import {Link, useLocation} from 'react-router-dom';

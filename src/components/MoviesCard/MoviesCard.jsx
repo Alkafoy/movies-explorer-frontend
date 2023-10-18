@@ -1,8 +1,10 @@
 import React, {useState} from "react";
 import './MoviesCard.css';
 import movieImage from '../../images/pic__COLOR_pic.png';
+import {useLocation} from "react-router-dom";
 
 export default function MoviesCard() {
+    const {pathname} = useLocation();
     const [isSaved, setIsSaved] = useState(false);
 
     const toggleSave = () => {
@@ -21,14 +23,14 @@ export default function MoviesCard() {
                 alt={`шаблон фильма`}
             />
             <div className="moviesCard__save-container">
-                {
-                    !isSaved ? (
+                {pathname === '/movies' ? (!isSaved ? (
                         <button type="button" onClick={toggleSave} className='moviesCard__button'>Сохранить</button>
                     ) : (
                         <button type="button" onClick={toggleSave} className='moviesCard__button_saved'></button>
                     )
-                }
-
+                ) : (
+                    <button type="button" className='moviesCard__button_delete'></button>
+                )}
             </div>
         </article>
     )

@@ -7,8 +7,8 @@ export default function Profile() {
     return (
         <>
             <Header/>
-            <section className='profile'>
-                <main>
+            <main>
+                <section className='profile'>
                     <h1 className='profile__title'>Привет, Виталий!</h1>
                     <form className='profile__form'>
                         <div className='profile__form-group'>
@@ -36,8 +36,8 @@ export default function Profile() {
                         <button className='profile__button'>Редактировать</button>
                         <Link to='/signin' className='profile__button profile__button_red'>Выйти из аккаунта</Link>
                     </div>
-                </main>
-            </section>
+                </section>
+            </main>
         </>
     );
 }

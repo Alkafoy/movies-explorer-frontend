@@ -1,6 +1,6 @@
 import React from "react";
 import MoviesCardList from "../MoviesCardList/MoviesCardList.jsx";
-import MoviesCard from "../MoviesCard/MoviesCard.jsx";
+import './SavedMovies.css';
 import SearchForm from "../SearchForm/SearchForm";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
@@ -10,7 +10,7 @@ export default function SavedMovies() {
         <>
             <Header/>
 
-            <main>
+            <main className='main'>
                 <SearchForm/>
                 <MoviesCardList/>
             </main>

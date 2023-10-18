@@ -24,7 +24,7 @@
 
 @media (max-width: 320px) {
     .aboutProject__title {
-        padding: 26px 18px 27px;
+        padding: 71px 18px 27px;
         font-size: 18px;
         font-weight: 400;
         line-height: 22px;
@@ -171,6 +171,7 @@
     color: #8B8B8B;
     display: flex;
     align-items: center;
+    margin: 0;
 }
 
 @media (max-width: 320px) {

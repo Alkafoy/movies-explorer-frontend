@@ -1,63 +1,62 @@
-.filterCheckbox {}
-
-.filterCheckbox__usually {
-    margin-top: 26px;
-    padding-bottom: 43px;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
-    border-bottom: 1px solid rgba(170, 170, 170, 0.2);
+.filter {
+  display: flex;
 }
 
-@media (max-width: 768px) {
-    .filterCheckbox__usually {
-        padding-bottom: 51px;
-    }
+.filter__title {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 18px;
+  color: #ffffff;
+  margin-left: 12px;
 }
 
-@media (max-width: 320px) {
-    .filterCheckbox__usually {
-        margin-top: 30px;
-        padding-bottom: 62px;
-    }
+.filter__checkbox {
+  width: 36px;
+  height: 20px;
+  border: none;
+  outline: none;
+  background: #a0a0a0;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  border-radius: 16px;
+  position: relative;
+  cursor: pointer;
+  appearance: none;
 }
 
-.filterCheckbox__usually input[type="checkbox"] {
-    display: none;
+.filter__checkbox::after {
+  position: absolute;
+  height: 16px;
+  width: 16px;
+  top: 2px;
+  left: 2px;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  content: "";
+  border-radius: 50%;
+  transition: 0.3s ease;
 }
 
-.filterCheckbox__custom {
-    width: 36px;
-    height: 20px;
-    background-image: url('../../images/smalltumb.svg'); /* Изображение для неотмеченного состояния */
-    background-size: cover;
-    background-repeat: no-repeat;
-    margin-right: 10px;
-    transition: background-image 0.3s;
+.filter__checkbox:checked {
+  background: #2be080; /* Измененный цвет фона для активного чекбокса */
 }
 
-/* Стили для стилизованного чекбокса в отмеченном состоянии */
-.filterCheckbox__usually input[type="checkbox"]:checked + .filterCheckbox__custom {
-    background-image: url('../../images/smalltumboff.svg'); /* Изображение для отмеченного состояния */
+.filter__checkbox:checked::after {
+  height: 16px;
+  width: 16px;
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  background: #ffffff;
+  box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.08);
+  content: "";
+  border-radius: 50%;
+  transition: 0.4s ease;
+  transform: translate(16px);
 }
 
-.filterCheckbox__label {
-    margin-left: 4px;
-    font-family: Inter;
-    font-size: 13px;
-    font-weight: 400;
+@media screen and (max-width: 576px) {
+  .filter__title {
+    font-size: 11px;
     line-height: 18px;
-    text-align: left;
-    color: #FFFFFF;
-}
-
-@media (max-width: 320px) {
-    .filterCheckbox__label {
-        margin-left: 4px;
-        font-size: 11px;
-        font-weight: 400;
-        line-height: 18px;
-        text-align: left;
-        color: #FFFFFF;
-    }
+  }
 }

@@ -10,4 +10,4 @@
 <https://movies.esergey.nomoredomainsrocks.ru>
 
 ## Ссылка на пулл-реквест
-<https://github.com/Alkafoy/movies-explorer-frontend/pull/2>
+[Ссылка на пулл-реквест](https://github.com/Alkafoy/movies-explorer-frontend/pull/2)
